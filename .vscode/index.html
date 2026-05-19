@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Altanbagana Dulguun — Designer & 3D Artist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,600;0,800&family=Syne:wght@700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<div id="cur-dot"></div>
+<div id="cur-ring"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">AD</div>
+  <ul class="nav-links">
+    <li><a href="#about">Тухай</a></li>
+    <li><a href="#skills">Чадвар</a></li>
+    <li><a href="#projects">Төслүүд</a></li>
+    <li><a href="#contact">Холбоо</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <canvas id="hero-canvas-3d"></canvas>
+  <div class="hero-vignette"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><div class="badge-dot"></div>Нээлттэй ажлын санал хүлээж байна</div>
+    <h1 class="hero-name">ALTANBAGANA<br><span class="acc">DULGUUN</span></h1>
+    <div class="hero-bottom">
+      <div class="hero-tags">
+        <span class="tag">Graphic Designer</span>
+        <span class="tag">3D Artist</span>
+        <span class="tag">UI / UX</span>
+        <span class="tag">Game Dev</span>
+        <span class="tag">Video Editing</span>
+      </div>
+      <div class="hero-scroll"><div class="scroll-line"></div>Доош гүйлгэ</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="sec-label">01 — Миний тухай</div>
+  <h2 class="sec-title reveal">Бүтээлч сэтгэлгээ.<br>Ирээдүйн чиг.</h2>
+  <div class="about-grid">
+    <div class="about-text reveal d1">
+      <p>Сайн уу! Намайг <strong>Алтанбагана Дөлгөөн</strong> гэдэг. Одоогоор <strong>Монгол Улсын их сургуулийн</strong> оюутан бөгөөд <em>Graphic Design</em> болон <em>3D Art</em>-ын чиглэлд хөгжиж байна.</p>
+      <br>
+      <p>Ирээдүйд <strong>Game Developer</strong> болон ажиллах, мөн өөрийн <strong>startup</strong> хэрэгжүүлэх төлөвлөгөөтэй. Дизайн бол надад зөвхөн ажил биш — энэ бол дэлхийтэй харилцах хэл.</p>
+    </div>
+    <div class="about-stats reveal d2">
+      <div class="stat-card"><div class="stat-num">1–2</div><div class="stat-label">Жилийн туршлага</div></div>
+      <div class="stat-card"><div class="stat-num">4+</div><div class="stat-label">Ашигладаг хэрэгсэл</div></div>
+      <div class="stat-card"><div class="stat-num">3D</div><div class="stat-label">Art & Animation</div></div>
+      <div class="stat-card"><div class="stat-num">∞</div><div class="stat-label">Бүтээлч санаа</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SKILLS — Big Radar Chart only -->
+<section id="skills">
+  <div class="sec-label">02 — Ур чадвар</div>
+  <h2 class="sec-title reveal">Миний<br>Чадварууд</h2>
+  <div class="radar-container reveal d1">
+    <svg id="radar-svg" class="radar-chart" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"></svg>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="sec-label">03 — Төслүүд</div>
+  <h2 class="sec-title reveal">Хийсэн<br>бүтээлүүд</h2>
+  <div class="projects-grid">
+
+    <div class="project-card reveal d1" data-category="poster">
+      <div class="project-bg"><svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="40" y="40" width="220" height="220" stroke="#8f47e8" stroke-width="1"/><rect x="70" y="70" width="160" height="160" stroke="#8f47e8" stroke-width="1"/><line x1="40" y1="150" x2="260" y2="150" stroke="#8f47e8" stroke-width="1"/><line x1="150" y1="40" x2="150" y2="260" stroke="#8f47e8" stroke-width="1"/><circle cx="150" cy="150" r="60" stroke="#8f47e8" stroke-width="1"/></svg></div>
+      <div class="project-card-inner">
+        <div class="project-num">01</div>
+        <div class="project-title">Poster Design</div>
+        <div class="project-desc">Харааны мессеж дамжуулах poster бүтээлүүд — өнгө, typography, layout-ийн нэгдэл.</div>
+        <div class="project-tags"><span class="project-tag">Illustrator</span><span class="project-tag">Photoshop</span></div>
+        <button class="project-add-btn" data-category="poster">+ Файл нэмэх</button>
+      </div>
+      <div class="project-gallery" data-category="poster"></div>
+    </div>
+
+    <div class="project-card reveal d2" data-category="video">
+      <div class="project-bg"><svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="90,70 90,230 240,150" stroke="#8f47e8" stroke-width="1" fill="none"/><circle cx="150" cy="150" r="100" stroke="#8f47e8" stroke-width="1"/><circle cx="150" cy="150" r="70" stroke="#8f47e8" stroke-width=".5"/><circle cx="150" cy="150" r="40" stroke="#8f47e8" stroke-width=".5"/></svg></div>
+      <div class="project-card-inner">
+        <div class="project-num">02</div>
+        <div class="project-title">Video Editing</div>
+        <div class="project-desc">Монтаж, motion graphics болон storytelling-тэй видео бүтээлүүд.</div>
+        <div class="project-tags"><span class="project-tag">Premiere Pro</span><span class="project-tag">After Effects</span></div>
+        <button class="project-add-btn" data-category="video">+ Файл нэмэх</button>
+      </div>
+      <div class="project-gallery" data-category="video"></div>
+    </div>
+
+    <div class="project-card reveal d3" data-category="3d">
+      <div class="project-bg"><svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="150,30 270,100 270,200 150,270 30,200 30,100" stroke="#8f47e8" stroke-width="1"/><polygon points="150,80 220,120 220,180 150,220 80,180 80,120" stroke="#8f47e8" stroke-width="1"/><line x1="150" y1="30" x2="150" y2="80" stroke="#8f47e8" stroke-width=".5"/><line x1="270" y1="100" x2="220" y2="120" stroke="#8f47e8" stroke-width=".5"/><line x1="270" y1="200" x2="220" y2="180" stroke="#8f47e8" stroke-width=".5"/><line x1="150" y1="270" x2="150" y2="220" stroke="#8f47e8" stroke-width=".5"/><line x1="30" y1="200" x2="80" y2="180" stroke="#8f47e8" stroke-width=".5"/><line x1="30" y1="100" x2="80" y2="120" stroke="#8f47e8" stroke-width=".5"/></svg></div>
+      <div class="project-card-inner">
+        <div class="project-num">03</div>
+        <div class="project-title">3D Art</div>
+        <div class="project-desc">3D загвар, render болон visual concept-ийн бүтээлүүд.</div>
+        <div class="project-tags"><span class="project-tag">3D Modeling</span><span class="project-tag">Render</span></div>
+        <button class="project-add-btn" data-category="3d">+ Файл нэмэх</button>
+      </div>
+      <div class="project-gallery" data-category="3d"></div>
+    </div>
+
+    <div class="project-soon reveal">
+      Удахгүй бүтээлүүд нэмэгдэнэ — <a href="https://instagram.com/dukaizn" target="_blank" rel="noopener">@dukaizn дагаарай</a>
+    </div>
+  </div>
+
+  <input type="file" id="file-input-hidden" multiple accept="image/*,.pdf,.psd,.ai,.mp4,.mov,.avi,.obj,.fbx,.blend" style="display:none;"/>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACT — fully working form -->
+<section id="contact">
+  <div class="sec-label">04 — Холбоо барих</div>
+  <h2 class="sec-title reveal">Хамтран<br>ажиллацгаая</h2>
+  <div class="contact-inner">
+    <div class="contact-links reveal d1">
+      <a href="mailto:dulgun0720@gmail.com" class="contact-link" target="_blank">
+        <div><div class="contact-link-label">Email</div><div class="contact-link-value">altanbagana.dulguun@gmail.com</div></div>
+        <div class="c-arrow">→</div>
+      </a>
+      <a href="https://instagram.com/Duk0720" target="_blank" rel="noopener" class="contact-link">
+        <div><div class="contact-link-label">Instagram</div><div class="contact-link-value">@Duk0720</div></div>
+        <div class="c-arrow">→</div>
+      </a>
+      <a href="https://instagram.com/dukaizn" target="_blank" rel="noopener" class="contact-link">
+        <div><div class="contact-link-label">Instagram — Design</div><div class="contact-link-value">@dukaizn</div></div>
+        <div class="c-arrow">→</div>
+      </a>
+      <a href="https://www.behance.net/dukaizen" target="_blank" rel="noopener" class="contact-link">
+        <div><div class="contact-link-label">Behance</div><div class="contact-link-value">@dukaizn </div></div>
+        <div class="c-arrow">→</div>
+      </div>
+    </div>
+    <div class="contact-cta reveal d2">
+      <div class="contact-cta-title">Санаа байна уу?<br><span class="acc">Яръя.</span></div>
+      <p>Poster, video, 3D, branding эсвэл дурын бүтээлч төслийн хувьд надтай холбогдоорой.</p>
+      <div class="contact-form" id="contact-form">
+        <input type="text" class="form-input" id="form-name" placeholder="Таны нэр" required/>
+        <input type="email" class="form-input" id="form-email" placeholder="Таны имэйл" required/>
+        <textarea class="form-input form-textarea" id="form-message" placeholder="Мессежээ бичнэ үү..." rows="4" required></textarea>
+        <button class="btn btn-send" id="btn-send" type="button">
+          <span class="btn-text">✉  Илгээх</span>
+          <span class="btn-loading" style="display:none;">Илгээж байна...</span>
+          <span class="btn-done" style="display:none;">✓ Илгээгдлээ!</span>
+        </button>
+        <div class="form-alt">
+          эсвэл шууд
+          <a href="mailto:dulguu0720n@gmail.com?subject=Хамтран ажиллах санал" class="form-alt-link">имэйл бичих →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Altanbagana Dulguun — All rights reserved</p>
+  <div class="footer-logo">AD</div>
+  <p>Graphic Design · 3D Art · UB, Mongolia</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
